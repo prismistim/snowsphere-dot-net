@@ -1,3 +1,5 @@
 <template>
-  <span>fugafuga</span>
+  <span>
+    fugafuga
+  </span>
 </template>
