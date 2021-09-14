@@ -1,5 +1,8 @@
 <template>
   <default>
+    <div class="text-7xl font-semibold my-10 text-center text-blue-700 myname">
+      snowsphere
+    </div>
     <about-me />
   </default>
 </template>
@@ -16,3 +19,9 @@ export default defineComponent({
   }
 })
 </script>
+
+<style scoped>
+.myname {
+  font-family: 'Poppins', sans-serif;
+}
+</style>
