@@ -1,8 +1,9 @@
 <template>
   <default>
-    <div class="text-7xl font-semibold my-10 text-center text-blue-700 myname">
+    <div class="my-10 h-[20vh] flex items-center text-5xl md:text-6xl lg:text-7xl font-medium text-gray-700 myname">
       snowsphere
     </div>
+    <div class="border-b border-gray-100 my-10" />
     <about-me />
   </default>
 </template>
@@ -19,9 +20,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style scoped>
-.myname {
-  font-family: 'Poppins', sans-serif;
-}
-</style>

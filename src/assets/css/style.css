@@ -3,3 +3,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  /* font-family: 'Poppins', 'M Plus 1p', sans-serif; */
+  font-family: 'Futura PT', 'Kinto Sans', sans-serif;
+}

@@ -2,7 +2,7 @@
   <section-title>
     <slot name="title"/>
   </section-title>
-  <description>
+  <description >
     <slot name="description"/>
   </description>
 </template>
