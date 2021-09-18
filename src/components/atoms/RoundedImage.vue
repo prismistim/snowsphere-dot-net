@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-3xl overflow-hidden">
+  <div class="rounded-3xl overflow-hidden shadow-md">
     <img :src="src" :alt="alt" />
   </div>
 </template>

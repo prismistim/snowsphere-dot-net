@@ -1,7 +1,4 @@
 <template>
-  <section-title class="mb-5">
-    About
-  </section-title>
   <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
     <div class="col-span-2">
       <rounded-image src="/@/assets/me.jpg" />
@@ -21,7 +18,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import RoundedImage from '/@/components/molecules/RoundedImage.vue'
+import RoundedImage from '/@/components/atoms/RoundedImage.vue'
 import Card from '/@/components/molecules/Card.vue'
 import SectionTitle from '/@/components/atoms/SectionTitle.vue'
 import Profile from '/@/components/organisms/Home/Profile.vue'
