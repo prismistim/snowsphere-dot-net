@@ -5,7 +5,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Default from '/@/components/templates/Default.vue'
-import AboutMe from '/@/components/organisms/Home/AboutMe.vue'
+import AboutMe from '/@/components/organisms/home/AboutMe.vue'
 
 export default defineComponent({
   components: {

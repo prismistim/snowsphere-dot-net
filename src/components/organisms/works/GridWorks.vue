@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-4 gap-10">
+  <div class="grid grid-cols-2 lg:grid-cols-3 gap-10">
     <div v-for="item of works" :key="item.title">
       <rounded-image src="/@/assets/me.jpg" class="mb-4"/>
       <div class="text-md text-gray-600">

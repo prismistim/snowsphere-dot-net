@@ -14,7 +14,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Contents from '/@/components/templates/Contents.vue'
-import AboutMe from '/@/components/organisms/Home/AboutMe.vue'
+import AboutMe from '/@/components/organisms/home/AboutMe.vue'
 import SectionTitle from '/@/components/atoms/SectionTitle.vue'
 
 export default defineComponent({
