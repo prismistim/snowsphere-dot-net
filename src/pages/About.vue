@@ -6,7 +6,8 @@
       </section-title>
     </template>
     <template #content>
-      <about-me />
+      <about-me class="mb-10"/>
+      <carear />
     </template>
   </contents>
 </template>
@@ -16,12 +17,14 @@ import { defineComponent } from 'vue'
 import Contents from '/@/components/templates/Contents.vue'
 import AboutMe from '/@/components/organisms/home/AboutMe.vue'
 import SectionTitle from '/@/components/atoms/SectionTitle.vue'
+import Carear from '/@/components/organisms/home/Carear.vue'
 
 export default defineComponent({
   components: {
     Contents,
     AboutMe,
-    SectionTitle
+    SectionTitle,
+    Carear
   }
 })
 </script>

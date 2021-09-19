@@ -1,26 +1,27 @@
 <template>
-  <div class="grid grid-cols-2 lg:grid-cols-3 gap-10">
-    <div v-for="item of works" :key="item.title">
-      <rounded-image src="/@/assets/me.jpg" class="mb-4"/>
-      <div class="text-md text-gray-600">
-        この作品はテストです
-      </div>
-    </div>
+  <div class="grid grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
+    <work-item
+      v-for="item of works"
+      :key="item.title"
+      imgSrc="/@/assets/me.jpg"
+      :title="item.title"
+      :tags="item.tags"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import RoundedImage from '/@/components/atoms/RoundedImage.vue'
+import WorkItem from '/@/components/molecules/works/WorkItem.vue'
 
-interface Work {
+type Work = {
   title: string,
-  description: string
+  tags: string[]
 }
 
 export default defineComponent({
   components: {
-    RoundedImage
+    WorkItem
   },
   setup() {
     const works: Work[] = []
@@ -28,7 +29,7 @@ export default defineComponent({
     for(let i = 0; i < 10; i++) {
       works.push({
         title: 'hogehoge' + i,
-        description: 'figafga'
+        tags: ['fohe', 'figafga']
       })
     }
 
