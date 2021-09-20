@@ -21,3 +21,7 @@ body {
   background-color: rgba(15, 15, 219, 0.5);
   border-radius: 10px;
 }
+
+h2.section-title {
+  font-family: 'Futura PT', sans-serif;
+}
