@@ -1,7 +1,7 @@
 <template>
   <section-card>
     <template #title>
-      職歴
+      Career
     </template>
     <template #content>
       hogehoge

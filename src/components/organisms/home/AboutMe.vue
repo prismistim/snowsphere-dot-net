@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-5 gap-10">
+  <div class="grid grid-cols-1 md:grid-cols-5 gap-2 md:gap-10">
     <div class="col-span-2">
       <rounded-image src="/@/assets/me.jpg" />
     </div>

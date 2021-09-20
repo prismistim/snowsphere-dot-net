@@ -3,3 +3,9 @@
     <slot />
   </h2>
 </template>
+
+<style scoped>
+h2.section-title {
+  font-family: 'Futura PT', sans-serif;
+}
+</style>
