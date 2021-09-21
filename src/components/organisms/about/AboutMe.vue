@@ -22,7 +22,7 @@ import { defineComponent } from 'vue'
 import RoundedImage from '/@/components/atoms/RoundedImage.vue'
 import Card from '/@/components/molecules/Card.vue'
 import SectionTitle from '/@/components/atoms/SectionTitle.vue'
-import Profile from '/@/components/organisms/home/Profile.vue'
+import Profile from '/@/components/organisms/about/Profile.vue'
 
 export default defineComponent({
   components: {

@@ -3,7 +3,7 @@
     <div class="col-span-1 font-semibold text-gray-600">{{ title }}</div>
     <div class="col-span-3 text-gray-700">{{ description }}</div>
   </li>
-  <div v-if="index !== length" class="border-b border-indigo-100" />
+  <div v-if="index !== length - 1" class="border-b border-indigo-100" />
 </template>
 
 <script lang="ts">
