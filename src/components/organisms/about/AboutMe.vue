@@ -1,6 +1,6 @@
 <template>
   <div class="md:flex md:mb-8">
-    <div class="md:inline-block md:w-[30vw] lg:w-[25vw] 2xl:w-[23vw] md:mr-7">
+    <div class="md:inline-block md:w-[30vw] lg:w-[25vw] 2xl:w-[23vw] md:mr-7 mb-4 md:mb-0">
       <rounded-image src="/@/assets/me.jpg" />
     </div>
     <div class="md:inline-block">

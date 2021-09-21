@@ -6,6 +6,6 @@
 
 <style scoped>
 .sub-title {
-  font-family: 'Futura PT', sans-serif;
+  font-family: 'futura-pt', sans-serif;
 }
 </style>
