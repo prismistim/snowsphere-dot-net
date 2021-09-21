@@ -1,7 +1,7 @@
 <template>
-  <li class="grid grid-cols-4 text-md px-2 py-4">
-    <div class="col-span-1 font-semibold text-gray-600">{{ title }}</div>
-    <div class="col-span-3 text-gray-700">{{ description }}</div>
+  <li class="grid grid-cols-8 text-md py-4 md:py-4 gap-y-3">
+    <div class="col-span-8 sm:col-span-2 font-semibold text-sm text-gray-600">{{ title }}</div>
+    <div class="col-span-8 sm:col-span-6 text-gray-700">{{ description }}</div>
   </li>
   <div v-if="index !== length - 1" class="border-b border-indigo-100" />
 </template>

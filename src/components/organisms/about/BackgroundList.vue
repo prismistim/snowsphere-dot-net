@@ -6,7 +6,6 @@
       </sub-title>
       </template>
     <template #content>
-      <p>詳しい経歴は Wantedly をご覧ください。</p>
       <ul class="rounded-md">
         <list-item
           v-for="(item, index) of careers"
@@ -17,6 +16,7 @@
           :length="careers.length"
         />
       </ul>
+      <p class="mt-5 mb-4 text-gray-800">詳しい経歴は Wantedly をご覧ください。</p>
     </template>
   </section-card>
 </template>
