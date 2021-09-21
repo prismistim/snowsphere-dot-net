@@ -8,23 +8,23 @@
       </div>
       <nav-bar />
       <div class="border-b border-gray-100 dark:border-gray-700 mt-2 mb-7" />
-      <div class="">
+      <div>
         <router-view/>
       </div>
     </div>
-    <!-- <div class="container flex mb-4 bg-gray-100 h-20 text-center justify-center">
-      <div class="w-full">Navs</div>
-    </div> -->
+    <footer />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import NavBar from '/@/components/organisms/NavBar.vue'
+import MyFooter from '/@/components/organisms/Footer.vue'
 
 export default defineComponent({
   components: {
-    NavBar
+    NavBar,
+    MyFooter
   }
 })
 </script>
