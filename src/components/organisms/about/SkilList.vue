@@ -6,13 +6,12 @@
       </sub-title>
       </template>
     <template #content>
-      <p>詳しい経歴は Wantedly をご覧ください。</p>
       <ul class="rounded-md">
-        <list-item
+        <tag-list-item
           v-for="(item, index) of careers"
           :key="item.title"
           :title="item.title"
-          :description="item.description"
+          :tags="item.tags"
           :index="index"
           :length="careers.length"
         />
@@ -24,32 +23,46 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import SectionCard from '/@/components/molecules/SectionCard.vue'
-import ListItem from '/@/components/molecules/ListItem.vue'
+import TagListItem from '/@/components/molecules/TagListItem.vue'
 import SubTitle from '/@/components/atoms/SubTitle.vue'
 
 export default defineComponent({
   components: {
     SectionCard,
-    ListItem,
+    TagListItem,
     SubTitle
   },
   setup() {
     const careers = [
       {
-        title: '2019.03',
-        description: '岐阜工業高等専門学校 電気情報工学科 卒業',
+        title: 'Language',
+        tags: [
+          'JavaScript', 'TypeScript', 'PHP', 'Dart', 'Java', 'C', 'C#'
+        ],
       },
       {
-        title: '2019.03 - (now)',
-        description: '一般社団法人 Do It Yourself インターン',
+        title: 'FW / Lib / SDK',
+        tags: [
+          'Vue.js', 'Node.js', 'Vite', 'Tailwind CSS', 'Bootstrap', 'Vuetify', 'CodeIgniter', 'Electron', 'Flutter', 'Unity', 'Laravel'
+        ],
       },
       {
-        title: '2019.03 - (now)',
-        description: '株式会社コマースロボティクス パート',
+        title: 'Software',
+        tags: [
+          'Illustrator', 'Photoshop', 'Premiere', 'After Effects', 'VS Code', 'Intelij IDEA'
+        ],
       },
       {
-        title: '2020.04',
-        description: 'サイバー大学 IT 総合学部 IT 総合学科 入学',
+        title: 'Service (AWS)',
+        tags: [
+          'ECS', 'EC2', 'ELB', 'S3', 'CloudFront', 'Lambda', 'Cognito'
+        ]
+      },
+      {
+        title: 'Licence',
+        tags: [
+          'アマチュア無線3級', '普通自動車運転免許'
+        ],
       },
     ]
 
