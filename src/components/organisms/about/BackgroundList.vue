@@ -16,7 +16,10 @@
           :length="careers.length"
         />
       </ul>
-      <p class="mt-5 mb-4 text-gray-800">詳しい経歴は Wantedly をご覧ください。</p>
+      <p class="mt-5 mb-4 text-gray-800">詳しい経歴は
+        <a href="https://wantedly.com/id/snowsphere" target="_blank" class="border-b border-indigo-600 hover:border-red-600 text-indigo-600 hover:text-red-600">Wantedly</a>
+        をご覧ください。
+      </p>
     </template>
   </section-card>
 </template>
