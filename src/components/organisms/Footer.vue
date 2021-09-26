@@ -1,16 +1,21 @@
 <template>
-  <div class="">
+  <div class="text-center py-4 md:py-10">
     © {{ year }} snowsphere
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, computed } from 'vue'
 
 export default defineComponent({
   setup() {
-    const year = new Date().getFullYear()
-    return year
+    const year = computed(() => {
+      return new Date().getFullYear()
+    })
+
+    return {
+      year
+    }
   },
 })
 </script>
