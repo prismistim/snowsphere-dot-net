@@ -43,13 +43,7 @@ export default defineComponent({
       {
         data: lastfmSvg,
         link: 'https://last.fm/user/prismist-m'
-      },
-      twitterSvg,
-      facebookSvg,
-      githubSvg,
-      lastfmSvg,
-      scSvg,
-      ytSvg
+      }
     ]
 
     return {
