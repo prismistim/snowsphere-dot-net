@@ -14,45 +14,48 @@
         rounded-md
         text-center
       "
-      >ID</span
     >
+      ID
+    </span>
     snowsphere
   </div>
-  <div class="text-base sub-info mb-3">
-    <span
-      class="
-        inline-block
-        w-14
-        px-2
-        py-1
-        mr-2
-        bg-gray-500
-        text-gray-200
-        rounded-md
-        text-center
-        label
-      "
-      >Birth</span
-    >
-    1998.08.08
-  </div>
-  <div class="text-base sub-info">
-    <span
-      class="
-        inline-block
-        w-14
-        px-2
-        py-1
-        mr-2
-        bg-gray-500
-        text-gray-200
-        rounded-md
-        text-center
-        label
-      "
-      >Place</span
-    >
-    Gifu, Japan
+  <div class="flex justify-center gap-x-5">
+    <div class="text-base sub-info mb-3">
+      <span
+        class="
+          inline-block
+          w-14
+          px-2
+          py-1
+          mr-2
+          bg-gray-500
+          text-gray-200
+          rounded-md
+          text-center
+          label
+        "
+        >Birth</span
+      >
+      1998.08.08
+    </div>
+    <div class="text-base sub-info">
+      <span
+        class="
+          inline-block
+          w-14
+          px-2
+          py-1
+          mr-2
+          bg-gray-500
+          text-gray-200
+          rounded-md
+          text-center
+          label
+        "
+        >Place</span
+      >
+      Gifu, Japan
+    </div>
   </div>
 </template>
 
