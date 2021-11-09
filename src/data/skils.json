@@ -1,0 +1,113 @@
+{
+  "items": [
+    {
+      "title": "Language",
+      "tags": [
+        {
+          "name": "JavaScript",
+          "level": 3
+        },
+        {
+          "name": "TypeScript",
+          "level": 2
+        },
+        {
+          "name": "PHP",
+          "level": 2
+        },
+        {
+          "name": "Python",
+          "level": 2
+        },
+        {
+          "name": "C#",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "title": "FW / Lib / SDK",
+      "tags": [
+        {
+          "name": "Vue.js",
+          "level": 3
+        },
+        {
+          "name": "CodeIgniter",
+          "level": 2
+        },
+        {
+          "name": "Electron",
+          "level": 2
+        },
+        {
+          "name": "Tailwind CSS",
+          "level": 2
+        },
+        {
+          "name": "Vuetify",
+          "level": 2
+        },
+        {
+          "name": "Unity",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "title": "Software",
+      "tags": [
+        {
+          "name": "VSCode",
+          "level": 3
+        },
+        {
+          "name": "Illustrator",
+          "level": 2
+        },
+        {
+          "name": "KORG Gagdet",
+          "level": 2
+        },
+        {
+          "name": "Photoshop",
+          "level": 2
+        },
+        {
+          "name": "Premiere",
+          "level": 2
+        },
+        {
+          "name": "After Effects",
+          "level": 1
+        },
+        {
+          "name": "Audition",
+          "level": 1
+        }
+      ]
+    },
+    {
+      "title": "Service",
+      "tags": [
+        {
+          "name": "AWS",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "title": "Licence",
+      "tags": [
+        {
+          "name": "アマチュア無線 3級",
+          "level": 0
+        },
+        {
+          "name": "普通自動車運転免許",
+          "level": 0
+        }
+      ]
+    }
+  ]
+}
