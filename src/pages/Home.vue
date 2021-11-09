@@ -1,6 +1,6 @@
 <template>
   <div class="mb-10 md:mb-4">
-    <rounded-image src="/me_icon.jpg"/>
+    <rounded-image src="/me_icon.jpg" />
   </div>
   <link-list />
 </template>
@@ -15,7 +15,7 @@ export default defineComponent({
   components: {
     Default,
     LinkList,
-    RoundedImage
-  }
+    RoundedImage,
+  },
 })
 </script>

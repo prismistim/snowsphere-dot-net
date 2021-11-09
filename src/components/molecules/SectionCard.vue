@@ -15,7 +15,7 @@ import SubTitle from '/@/components/atoms/SubTitle.vue'
 
 export default defineComponent({
   components: {
-    SubTitle
-  }
+    SubTitle,
+  },
 })
 </script>
