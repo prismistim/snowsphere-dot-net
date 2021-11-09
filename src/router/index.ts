@@ -8,21 +8,21 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
   },
   {
     path: '/about',
     name: 'About',
-    component: About
+    component: About,
   },
   {
     path: '/works',
     name: 'Works',
-    component: Works
-  }
+    component: Works,
+  },
 ]
 
 export default createRouter({
   history: createWebHistory(),
-  routes: routes
+  routes: routes,
 })

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <rounded-image :src="imgSrc" class="mb-4"/>
+    <rounded-image :src="imgSrc" class="mb-4" />
     <div class="mb-2">
       <tag v-for="item of tags" :key="item" :name="item" />
     </div>
@@ -18,20 +18,20 @@ import Tag from '/@/components/atoms/Tag.vue'
 export default defineComponent({
   components: {
     RoundedImage,
-    Tag
+    Tag,
   },
   props: {
     imgSrc: {
       type: String,
-      default: ''
+      default: '',
     },
     title: {
       type: String,
-      default: ''
+      default: '',
     },
     tags: {
-      type: Array as PropType<string[]>
-    }
-  }
+      type: Array as PropType<string[]>,
+    },
+  },
 })
 </script>

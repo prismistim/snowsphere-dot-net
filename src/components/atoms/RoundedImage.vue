@@ -12,12 +12,12 @@ export default defineComponent({
     src: {
       type: String,
       required: true,
-      default: ''
+      default: '',
     },
     alt: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 })
 </script>

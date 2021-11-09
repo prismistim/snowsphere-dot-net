@@ -3,7 +3,7 @@
     <work-item
       v-for="item of works"
       :key="item.title"
-      imgSrc="/@/assets/me.jpg"
+      img-src="/@/assets/me.jpg"
       :title="item.title"
       :tags="item.tags"
     />
@@ -15,27 +15,27 @@ import { defineComponent } from 'vue'
 import WorkItem from '/@/components/molecules/works/WorkItem.vue'
 
 type Work = {
-  title: string,
+  title: string
   tags: string[]
 }
 
 export default defineComponent({
   components: {
-    WorkItem
+    WorkItem,
   },
   setup() {
     const works: Work[] = []
 
-    for(let i = 0; i < 10; i++) {
+    for (let i = 0; i < 10; i++) {
       works.push({
         title: 'hogehoge' + i,
-        tags: ['fohe', 'figafga']
+        tags: ['fohe', 'figafga'],
       })
     }
 
     return {
-      works
+      works,
     }
-  }
+  },
 })
 </script>

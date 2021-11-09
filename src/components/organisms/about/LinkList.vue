@@ -1,8 +1,10 @@
 <template>
-  <div class="grid grid-cols-3 md:grid-cols-6 gap-10 md:gap-0 justify-items-center">
+  <div
+    class="grid grid-cols-3 md:grid-cols-6 gap-10 md:gap-0 justify-items-center"
+  >
     <div v-for="(item, index) of icons" :key="index" class="lg:p-8 icon">
       <a :href="item.link" target="_blank">
-        <img :src="item.data" class="w-8"/>
+        <img :src="item.data" class="w-8" />
       </a>
     </div>
   </div>
@@ -22,32 +24,32 @@ export default defineComponent({
     const icons = [
       {
         data: twitterSvg,
-        link: 'https://twitter.com/Prismist_M'
+        link: 'https://twitter.com/Prismist_M',
       },
       {
         data: facebookSvg,
-        link: 'https://facebook.com/mizukicom/'
+        link: 'https://facebook.com/mizukicom/',
       },
       {
         data: githubSvg,
-        link: 'https://github.com/prismistim'
+        link: 'https://github.com/prismistim',
       },
       {
         data: scSvg,
-        link: 'https://soundcloud.com/snowsphere_sc'
+        link: 'https://soundcloud.com/snowsphere_sc',
       },
       {
         data: ytSvg,
-        link: 'https://www.youtube.com/channel/UCAqMZ1QWysfFHTGcgh4CkYw'
+        link: 'https://www.youtube.com/channel/UCAqMZ1QWysfFHTGcgh4CkYw',
       },
       {
         data: lastfmSvg,
-        link: 'https://last.fm/user/prismist-m'
-      }
+        link: 'https://last.fm/user/prismist-m',
+      },
     ]
 
     return {
-      icons
+      icons,
     }
   },
 })
