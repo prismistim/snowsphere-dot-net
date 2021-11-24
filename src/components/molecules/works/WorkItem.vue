@@ -18,20 +18,21 @@ import Tag from '/@/components/atoms/Tag.vue'
 export default defineComponent({
   components: {
     RoundedImage,
-    Tag,
+    Tag
   },
   props: {
     imgSrc: {
       type: String,
-      default: '',
+      default: ''
     },
     title: {
       type: String,
-      default: '',
+      default: ''
     },
     tags: {
       type: Array as PropType<string[]>,
-    },
-  },
+      default: () => []
+    }
+  }
 })
 </script>
