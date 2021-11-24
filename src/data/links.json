@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "name": "twitter",
+      "link": "https://twitter.com/Prismist_M"
+    },
+    {
+      "name": "facebook",
+      "link": "https://facebook.com/mizukicom/"
+    },
+    {
+      "name": "github",
+      "link": "https://github.com/prismistim"
+    },
+    {
+      "name": "soundcloud",
+      "link": "https://soundcloud.com/snowsphere_sc"
+    },
+    {
+      "name": "youtube",
+      "link": "https://www.youtube.com/channel/UCAqMZ1QWysfFHTGcgh4CkYw"
+    },
+    {
+      "name": "lastfm",
+      "link": "https://last.fm/user/prismist-m"
+    }
+  ]
+}

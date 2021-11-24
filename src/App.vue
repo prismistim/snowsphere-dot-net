@@ -1,3 +1,9 @@
+
+<script setup lang="ts">
+import NavBar from '/@/components/organisms/NavBar.vue'
+import MyFooter from '/@/components/organisms/Footer.vue'
+</script>
+
 <template>
   <div class="bg-white dark:bg-gray-900">
     <div class="container w-full mx-auto px-[10vw]">
@@ -26,19 +32,6 @@
     <my-footer />
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-import NavBar from '/@/components/organisms/NavBar.vue'
-import MyFooter from '/@/components/organisms/Footer.vue'
-
-export default defineComponent({
-  components: {
-    NavBar,
-    MyFooter,
-  },
-})
-</script>
 
 <style scoped>
 .site-title {
