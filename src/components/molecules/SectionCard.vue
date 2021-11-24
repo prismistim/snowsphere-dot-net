@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import SubTitle from '/@/components/atoms/SubTitle.vue'
+</script>
+
 <template>
   <div class="mb-4">
     <sub-title class="mb-4">
@@ -8,14 +12,3 @@
     </div>
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-import SubTitle from '/@/components/atoms/SubTitle.vue'
-
-export default defineComponent({
-  components: {
-    SubTitle,
-  },
-})
-</script>

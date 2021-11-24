@@ -1,6 +1,6 @@
 <template>
   <div>
-    <rounded-image :src="imgSrc" class="mb-4" />
+    <rounded-banner-image :src="imgSrc" class="mb-4" />
     <div class="mb-2">
       <tag v-for="item of tags" :key="item" :name="item" />
     </div>
@@ -12,12 +12,12 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
-import RoundedImage from '/@/components/atoms/RoundedImage.vue'
+import RoundedBannerImage from '/@/components/atoms/RoundedBannerImage.vue'
 import Tag from '/@/components/atoms/Tag.vue'
 
 export default defineComponent({
   components: {
-    RoundedImage,
+    RoundedBannerImage,
     Tag
   },
   props: {
