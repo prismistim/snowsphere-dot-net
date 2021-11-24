@@ -34,8 +34,9 @@
           text-center
           label
         "
-        >Birth</span
       >
+        Birth
+      </span>
       1998.08.08
     </div>
     <div class="text-base sub-info">
@@ -52,8 +53,9 @@
           text-center
           label
         "
-        >Place</span
       >
+        Place
+      </span>
       Gifu, Japan
     </div>
   </div>
