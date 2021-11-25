@@ -1,5 +1,5 @@
 <template>
-  <div class="sticky top-0 py-5 bg-opacity-80 bg-white nav-bar">
+  <div class="sticky top-0 py-5 bg-opacity-90 bg-white nav-bar z-10">
     <div class="grid grid-cols-3">
       <div>
         <router-link
@@ -14,8 +14,9 @@
             ease-in-out
             duration-500
           "
-          >About</router-link
         >
+          About
+        </router-link>
       </div>
       <div>
         <router-link
@@ -30,8 +31,9 @@
             ease-in-out
             duration-500
           "
-          >Works</router-link
         >
+          Works
+        </router-link>
       </div>
     </div>
   </div>
