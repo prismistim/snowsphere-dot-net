@@ -5,6 +5,7 @@ import SectionTitle from '/@/components/atoms/SectionTitle.vue'
 import CareerList from '/@/components/organisms/about/CareerList.vue'
 import SideBySide from '/@/components/templates/SideBySide.vue'
 import SkilList from '/@/components/organisms/about/SkilList.vue'
+import MyWeeklyMusicChartList from '/@/components/organisms/about/MyWeeklyMusicChartList.vue'
 </script>
 
 <template>
@@ -20,6 +21,11 @@ import SkilList from '/@/components/organisms/about/SkilList.vue'
         </template>
         <template #right>
           <skil-list />
+        </template>
+      </side-by-side>
+      <side-by-side>
+        <template #left>
+          <my-weekly-music-chart-list></my-weekly-music-chart-list>
         </template>
       </side-by-side>
     </template>
