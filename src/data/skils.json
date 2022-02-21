@@ -93,6 +93,14 @@
         {
           "name": "AWS",
           "level": 2
+        },
+        {
+          "name": "Linode",
+          "level": 2
+        },
+        {
+          "name": "Contentful",
+          "level": 1
         }
       ]
     },

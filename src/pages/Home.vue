@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Default from '/@/components/templates/Default.vue'
 import LinkList from '/@/components/organisms/about/LinkList.vue'
 import RoundedImage from '/@/components/atoms/RoundedImage.vue'
 </script>

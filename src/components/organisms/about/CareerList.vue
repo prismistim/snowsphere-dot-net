@@ -32,8 +32,9 @@ import careers from '/@/data/careers.json'
             text-indigo-600
             hover:text-red-600
           "
-          >Wantedly</a
         >
+          Wantedly
+        </a>
         をご覧ください。
       </p>
     </template>
