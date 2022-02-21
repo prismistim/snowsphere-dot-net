@@ -7,8 +7,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "lint:script": "eslint --ext .ts,vue --ignore-path .gitignore .",
-    "lint:style": "stylelint src/**/*.{css,scss,vue}",
-    "lint:markup": "vti diagnostics"
+    "lint:style": "stylelint src/**/*.{css,scss,vue}"
   },
   "husky": {
     "hooks": {
@@ -21,33 +20,32 @@
     "*": "prettier -w -u"
   },
   "dependencies": {
-    "vue": "^3.0.5",
-    "vue-router": "4"
+    "vue": "^3.2.22",
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
-    "@types/node": "^14.14.37",
-    "@typescript-eslint/eslint-plugin": "^4.21.0",
-    "@typescript-eslint/parser": "^4.21.0",
-    "@vitejs/plugin-vue": "^1.1.5",
-    "@vue/compiler-sfc": "^3.0.5",
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vitejs/plugin-vue": "^1.9.4",
+    "@vue/compiler-sfc": "^3.2.22",
     "@vue/eslint-config-prettier": "^6.0.0",
-    "@vue/eslint-config-typescript": "^7.0.0",
-    "autoprefixer": "^10.2.5",
-    "eslint": "^7.24.0",
+    "@vue/eslint-config-typescript": "^9.0.1",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^7.8.0",
-    "husky": "^6.0.0",
-    "lint-staged": "^10.5.4",
-    "postcss": "^8.2.9",
-    "prettier": "^2.2.1",
-    "stylelint": "^13.12.0",
-    "stylelint-config-recommended": "^4.0.0",
-    "stylelint-config-standard": "^21.0.0",
-    "tailwindcss": "^2.1.1",
-    "typescript": "^4.2.4",
-    "vite": "^2.1.3",
-    "vti": "^0.1.1",
-    "vue-tsc": "^0.3.0"
+    "eslint-plugin-vue": "^8.0.3",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.0.2",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "stylelint": "^14.1.0",
+    "stylelint-config-recommended": "^6.0.0",
+    "stylelint-config-standard": "^24.0.0",
+    "tailwindcss": "^2.2.19",
+    "typescript": "^4.4.4",
+    "vite": "^2.6.14",
+    "vue-tsc": "^0.29.5"
   }
 }
