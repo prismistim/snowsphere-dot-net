@@ -26,7 +26,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <li class="grid grid-cols-8 text-md py-4 md:py-4 gap-y-3">
+  <li class="grid grid-cols-8 text-md py-2 md:py-4 gap-y-3">
     <div>
       <div class="font-semibold">{{ props.rank }}</div>
       <div class="text-gray-300">({{ props.playCount }})</div>

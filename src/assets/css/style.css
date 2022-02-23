@@ -9,6 +9,15 @@ body {
   font-family: 'usual', 'kinto-sans', sans-serif;
 }
 
+html {
+  visibility: hidden;
+}
+
+html.wf-active,
+html.loading-delay {
+  visibility: visible;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -25,3 +34,4 @@ body {
 h2.section-title {
   font-family: 'futura-pt', sans-serif;
 }
+
