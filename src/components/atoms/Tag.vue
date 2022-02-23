@@ -10,7 +10,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <span class="px-3 py-1 bg-gray-300 rounded-md mr-2 text-gray-800">
+  <span class="py-1 rounded-md text-indigo-400 font-semibold">
     {{ props.name }}
   </span>
 </template>

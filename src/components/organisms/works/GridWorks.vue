@@ -10,14 +10,14 @@ const works: Work[] = []
 
 for (let i = 0; i < 10; i++) {
   works.push({
-    title: 'hogehoge' + i,
-    tags: ['fohe', 'figafga'],
+    title: 'ゲーム限界都市™ デザイン',
+    tags: ['デザイン', 'DTP'],
   })
 }
 </script>
 
 <template>
-  <div class="grid grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
+  <div class="grid lg:grid-cols-2 xl:grid-cols-3 gap-8 mb-10">
     <work-item
       v-for="item of works"
       :key="item.title"

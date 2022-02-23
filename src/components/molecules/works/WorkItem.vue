@@ -1,12 +1,15 @@
 <template>
   <div>
-    <rounded-banner-image :src="imgSrc" class="mb-4" />
-    <div class="mb-2">
-      <tag v-for="item of tags" :key="item" :name="item" />
+    <rounded-banner-image :src="imgSrc" class="mb-2" />
+    <div>
+      <span v-for="(item, index) of tags" :key="item" class="mr-2">
+        <tag :name="item" class="text-sm"/>
+        <span v-if="index < tags.length - 1" class="text-indigo-300">,</span>
+      </span>
     </div>
-    <div class="text-lg md:text-xl text-gray-600">
+    <a href="#" class="pb-1/2 text-lg md:text-xl text-gray-600 hover:text-indigo-500 font-medium hover:border-b-2 hover:border-indigo-500">
       {{ title }}
-    </div>
+    </a>
   </div>
 </template>
 

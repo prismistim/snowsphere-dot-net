@@ -16,7 +16,7 @@ const props = defineProps({
 
 
 <template>
-  <div class="h-40 rounded-3xl overflow-hidden shadow-md">
+  <div class="h-40 rounded-md overflow-hidden">
     <img :src="props.src" :alt="props.alt" />
   </div>
 </template>
