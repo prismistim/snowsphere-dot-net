@@ -3,7 +3,6 @@
     class="
       mb-3
       text-4xl
-      md:text-5xl
       font-bold
       text-gray-700
       dark:text-white

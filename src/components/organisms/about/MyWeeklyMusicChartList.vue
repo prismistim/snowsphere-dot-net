@@ -49,7 +49,7 @@ fetchMusicChart()
       <sub-title> Weekly Music Chart </sub-title>
     </template>
     <template #content>
-      <ul>
+      <ul class="py-2 md:py-0">
         <music-list-item
           v-for="item of MusicCharts"
           :key="item.title"

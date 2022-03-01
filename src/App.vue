@@ -6,7 +6,7 @@ import MyFooter from '/@/components/organisms/Footer.vue'
 <template>
   <div class="bg-white dark:bg-gray-900">
     <div class="container w-full mx-auto px-[10vw]">
-      <div class="py-10 h-[20vh] flex items-center myname">
+      <div class="py-10 h-[10vh] md:h-[20vh] flex items-center myname">
         <router-link
           to="/"
           class="

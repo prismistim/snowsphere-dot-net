@@ -1,5 +1,5 @@
 <template>
-  <div class="sticky top-0 py-5 bg-opacity-90 bg-white nav-bar z-10">
+  <div class="sticky top-0 py-5 bg-opacity-90 bg-white dark:bg-transparent nav-bar z-10">
     <div class="grid grid-cols-3">
       <div>
         <router-link

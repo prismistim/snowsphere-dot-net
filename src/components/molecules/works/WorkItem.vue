@@ -7,9 +7,9 @@
         <span v-if="index < tags.length - 1" class="text-indigo-300">,</span>
       </span>
     </div>
-    <a href="#" class="pb-1/2 text-lg md:text-xl text-gray-600 hover:text-indigo-500 font-medium hover:border-b-2 hover:border-indigo-500">
+    <router-link :to="'/works/' + id" class="pb-1/2 text-lg md:text-xl text-gray-600 hover:text-indigo-500 font-medium hover:border-b-2 hover:border-indigo-500">
       {{ title }}
-    </a>
+    </router-link>
   </div>
 </template>
 
@@ -24,6 +24,10 @@ export default defineComponent({
     Tag
   },
   props: {
+    id: {
+      type: Number,
+      default: 1
+    },
     imgSrc: {
       type: String,
       default: ''
