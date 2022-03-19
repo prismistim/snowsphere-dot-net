@@ -2,7 +2,8 @@
   "env": {
     "browser": true,
     "es2021": true,
-    "node": true
+    "node": true,
+    "vue/setup-compiler-macros": true
   },
   "extends": [
     "eslint:recommended",
@@ -17,6 +18,7 @@
   },
   "plugins": ["vue", "@typescript-eslint"],
   "rules": {
-    "indent": ["error", 2]
+    "indent": ["error", 2],
+    "vue/script-setup-uses-vars": "error"
   }
 }
