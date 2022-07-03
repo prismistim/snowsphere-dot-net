@@ -37,7 +37,7 @@ const MusicCharts = computed(() => {
     }
   })
 
-  return target.slice(0, 10)
+  return target.slice(0, 5)
 })
 
 fetchMusicChart()

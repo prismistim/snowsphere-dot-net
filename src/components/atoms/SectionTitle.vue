@@ -1,13 +1,6 @@
 <template>
   <h2
-    class="
-      mb-3
-      text-4xl
-      font-bold
-      text-gray-700
-      dark:text-white
-      section-title
-    "
+    class="section-title mb-3 text-4xl font-bold text-gray-700 dark:text-white"
   >
     <slot />
   </h2>

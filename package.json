@@ -22,7 +22,8 @@
   "dependencies": {
     "axios": "^0.26.0",
     "vue": "^3.2.31",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "vue3-carousel": "^0.1.38"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
@@ -41,6 +42,7 @@
     "lint-staged": "^12.3.4",
     "postcss": "^8.4.7",
     "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.11",
     "stylelint": "^14.5.3",
     "stylelint-config-recommended": "^7.0.0",
     "stylelint-config-standard": "^25.0.0",

@@ -1,19 +1,21 @@
 <script setup lang="ts">
 import WorkItem from '/@/components/molecules/works/WorkItem.vue'
+import dataWorks from '/@/data/works.json'
+
+type Tag = {
+  name: string
+}
 
 type Work = {
   title: string
-  tags: string[]
+  tags: Tag[]
 }
 
 const works: Work[] = []
 
-for (let i = 0; i < 10; i++) {
-  works.push({
-    title: 'ゲーム限界都市™ デザイン',
-    tags: ['デザイン', 'DTP'],
-  })
-}
+dataWorks.items.forEach((item) => {
+  works.push(item)
+})
 </script>
 
 <template>
@@ -21,7 +23,7 @@ for (let i = 0; i < 10; i++) {
     <work-item
       v-for="item of works"
       :key="item.title"
-      img-src="/me.jpg"
+      image="/me.jpg"
       :title="item.title"
       :tags="item.tags"
     />

@@ -2,17 +2,17 @@
 import links from '/@/data/links.json'
 
 const importSvg = (name: string): string => {
-  return `/@/assets/svg/${name}.svg`
+  return `/svg/${name}.svg`
 }
 </script>
 
 <template>
   <div
-    class="grid grid-cols-3 md:grid-cols-6 gap-10 md:gap-0 justify-items-center"
+    class="grid grid-cols-3 justify-items-center gap-10 md:grid-cols-6 md:gap-0"
   >
-    <div v-for="(item, index) of links.items" :key="index" class="lg:p-8 icon">
+    <div v-for="(item, index) of links.items" :key="index" class="icon lg:p-8">
       <a :href="item.link" target="_blank">
-        <img :src="importSvg(item.name)" class="w-8" />
+        <img :src="importSvg(item.name)" class="w-8 sepia-30 brightness-75 hue-rotate-180" />
       </a>
     </div>
   </div>

@@ -4,24 +4,24 @@ import { defineProps } from 'vue'
 const props = defineProps({
   rank: {
     type: Number,
-    default: 1
+    default: 1,
   },
   thumb: {
     type: String,
-    default: ''
+    default: '',
   },
   title: {
     type: String,
-    default: ''
+    default: '',
   },
   artist: {
     type: String,
-    default: ''
+    default: '',
   },
   playCount: {
     type: Number,
-    default: 0
-  }
+    default: 0,
+  },
 })
 </script>
 

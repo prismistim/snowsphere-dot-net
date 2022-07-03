@@ -1,5 +1,5 @@
 <template>
-  <div class="text-3xl font-bold sub-title text-gray-700">
+  <div class="sub-title text-3xl font-bold text-gray-700">
     <slot />
   </div>
 </template>
