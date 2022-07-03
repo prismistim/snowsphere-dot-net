@@ -26,12 +26,7 @@ import careers from '/@/data/careers.json'
         <a
           href="https://wantedly.com/id/snowsphere"
           target="_blank"
-          class="
-            border-b border-indigo-600
-            hover:border-red-600
-            text-indigo-600
-            hover:text-red-600
-          "
+          class="border-b border-indigo-600 hover:border-red-600 text-indigo-600 hover:text-red-600"
         >
           Wantedly
         </a>

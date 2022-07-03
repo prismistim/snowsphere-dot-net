@@ -7,7 +7,7 @@ const year = computed(() => {
 </script>
 
 <template>
-  <div class="text-center text-gray-300 py-4 md:py-10">
+  <div class="text-center text-gray-300 py-8 md:py-10">
     © {{ year }} snowsphere
   </div>
 </template>

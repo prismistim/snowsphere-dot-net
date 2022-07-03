@@ -5,18 +5,17 @@ const props = defineProps({
   src: {
     type: String,
     required: true,
-    default: ''
+    default: '',
   },
   alt: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
 </script>
 
-
 <template>
-  <div class="h-40 rounded-3xl overflow-hidden shadow-md">
+  <div class="h-40 overflow-hidden rounded-md">
     <img :src="props.src" :alt="props.alt" />
   </div>
 </template>

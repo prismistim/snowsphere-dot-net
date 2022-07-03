@@ -4,29 +4,29 @@ import { defineProps } from 'vue'
 const props = defineProps({
   rank: {
     type: Number,
-    default: 1
+    default: 1,
   },
   thumb: {
     type: String,
-    default: ''
+    default: '',
   },
   title: {
     type: String,
-    default: ''
+    default: '',
   },
   artist: {
     type: String,
-    default: ''
+    default: '',
   },
   playCount: {
     type: Number,
-    default: 0
-  }
+    default: 0,
+  },
 })
 </script>
 
 <template>
-  <li class="grid grid-cols-8 text-md py-4 md:py-4 gap-y-3">
+  <li class="grid grid-cols-8 text-md py-2 md:py-4 gap-y-3">
     <div>
       <div class="font-semibold">{{ props.rank }}</div>
       <div class="text-gray-300">({{ props.playCount }})</div>

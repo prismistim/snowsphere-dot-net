@@ -4,20 +4,20 @@ import { defineProps } from 'vue'
 const props = defineProps({
   title: {
     type: String,
-    default: ''
+    default: '',
   },
   description: {
     type: String,
-    default: ''
+    default: '',
   },
   index: {
     type: Number,
-    default: 0
+    default: 0,
   },
   length: {
     type: Number,
-    default: 0
-  }
+    default: 0,
+  },
 })
 </script>
 
@@ -30,5 +30,8 @@ const props = defineProps({
       {{ props.description }}
     </div>
   </li>
-  <div v-if="props.index !== props.length - 1" class="border-b border-indigo-100" />
+  <div
+    v-if="props.index !== props.length - 1"
+    class="border-b border-indigo-100"
+  />
 </template>
