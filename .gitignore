@@ -7,4 +7,4 @@ yarn-error.log
 .env
 
 .yarn/
-!.yarn/release/*
+!.yarn/releases/*
