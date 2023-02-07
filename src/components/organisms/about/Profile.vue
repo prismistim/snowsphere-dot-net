@@ -1,58 +1,26 @@
 <template>
   <div class="text-3xl font-medium">村重 海月</div>
-  <div class="text-lg py-1 mb-2 name-eng">Mizuki Murashige</div>
-  <div class="text-2xl name-id mb-3">
+  <div class="name-eng mb-2 py-1 text-lg">Mizuki Murashige</div>
+  <div class="name-id mb-3 text-2xl">
     <span
-      class="
-        inline-block
-        w-14
-        px-2
-        py-1
-        mr-2
-        text-lg
-        bg-gray-300
-        rounded-md
-        text-center
-      "
+      class="mr-2 inline-block w-14 rounded-md bg-gray-300 px-2 py-1 text-center text-lg"
     >
       ID
     </span>
     snowsphere
   </div>
   <div class="flex justify-center gap-x-5">
-    <div class="text-base sub-info mb-3">
+    <div class="sub-info mb-3 text-base">
       <span
-        class="
-          inline-block
-          w-14
-          px-2
-          py-1
-          mr-2
-          bg-gray-500
-          text-gray-200
-          rounded-md
-          text-center
-          label
-        "
+        class="label mr-2 inline-block w-14 rounded-md bg-gray-500 px-2 py-1 text-center text-gray-200"
       >
         Birth
       </span>
       1998.08.08
     </div>
-    <div class="text-base sub-info">
+    <div class="sub-info text-base">
       <span
-        class="
-          inline-block
-          w-14
-          px-2
-          py-1
-          mr-2
-          bg-gray-500
-          text-gray-200
-          rounded-md
-          text-center
-          label
-        "
+        class="label mr-2 inline-block w-14 rounded-md bg-gray-500 px-2 py-1 text-center text-gray-200"
       >
         Place
       </span>

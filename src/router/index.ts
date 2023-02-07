@@ -24,8 +24,8 @@ const routes = [
   {
     path: '/works/:id',
     name: 'Works/Detail',
-    component: WorkDetail
-  }
+    component: WorkDetail,
+  },
 ]
 
 export default createRouter({

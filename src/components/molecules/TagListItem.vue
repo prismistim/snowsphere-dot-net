@@ -6,24 +6,14 @@ type TagItem = {
   level: number
 }
 
-const props = defineProps({
-  title: {
-    type: String,
-    default: '',
-  },
-  tags: {
-    type: Array as PropType<TagItem[]>,
-    default: () => [],
-  },
-  index: {
-    type: Number,
-    default: 0,
-  },
-  length: {
-    type: Number,
-    default: 0,
-  },
-})
+type Props = {
+  title: string
+  tags: TagItem[]
+  index: number
+  length: number
+}
+
+const props = withDefaults(defineProps<Props>(), {})
 
 const tagColor = (level: number) => {
   if (level === 3) {
@@ -39,17 +29,17 @@ const tagColor = (level: number) => {
 </script>
 
 <template>
-  <li class="grid grid-cols-8 text-md py-4 md:py-4 gap-y-3">
-    <div class="col-span-8 sm:col-span-2 font-semibold text-sm text-gray-600">
+  <li class="text-md grid grid-cols-8 gap-y-3 py-4 md:py-4">
+    <div class="col-span-8 text-sm font-semibold text-gray-600 sm:col-span-2">
       {{ props.title }}
     </div>
-    <div class="col-span-6 relative">
-      <div class="flex flex-wrap content-evenly overflow-hidden gap-2">
+    <div class="relative col-span-6">
+      <div class="flex flex-wrap content-evenly gap-2 overflow-hidden">
         <span
           v-for="item of tags"
           :key="item.name"
           :class="tagColor(item.level)"
-          class="flex px-4 py-2 text-sm text-white rounded-md"
+          class="flex rounded-md px-4 py-2 text-sm text-white"
         >
           {{ item.name }}
         </span>
