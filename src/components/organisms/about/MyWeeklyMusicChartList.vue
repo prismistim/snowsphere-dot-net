@@ -4,7 +4,7 @@ import { ref, computed } from 'vue'
 import { Response, Track } from '/@/types/LastfmWeeklyChart'
 import SectionCard from '/@/components/molecules/SectionCard.vue'
 import SubTitle from '/@/components/atoms/SubTitle.vue'
-import MusicListItem from '/@/components/molecules/about/MusicListItem.vue';
+import MusicListItem from '/@/components/molecules/about/MusicListItem.vue'
 
 const chartsRawData = ref<Track[]>([])
 
@@ -12,7 +12,9 @@ const fetchMusicChart = async () => {
   const apiKey = import.meta.env.VITE_LF_API_KEY
 
   try {
-    const res: AxiosResponse<Response> = await axios.get(`http://ws.audioscrobbler.com/2.0/?method=user.getweeklytrackchart&user=prismist-m&api_key=${apiKey}&format=json`)
+    const res: AxiosResponse<Response> = await axios.get(
+      `https://ws.audioscrobbler.com/2.0/?method=user.getweeklytrackchart&user=prismist-m&api_key=${apiKey}&format=json`
+    )
 
     if (res.status === 200) {
       chartsRawData.value = res.data.weeklytrackchart.track
@@ -30,10 +32,10 @@ const MusicCharts = computed(() => {
   const target = chartsRawData.value.map((item: Track) => {
     return {
       rank: Number(item['@attr'].rank),
-      thumb: item.image[1]["#text"],
+      thumb: item.image[1]['#text'],
       title: item.name,
-      artist: item.artist["#text"],
-      playCount: Number(item.playcount)
+      artist: item.artist['#text'],
+      playCount: Number(item.playcount),
     }
   })
 

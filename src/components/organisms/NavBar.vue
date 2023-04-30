@@ -1,12 +1,12 @@
 <template>
   <div
-    class="sticky top-0 py-5 bg-opacity-90 bg-white dark:bg-transparent nav-bar z-10"
+    class="nav-bar sticky top-0 z-10 bg-white bg-opacity-90 py-5 dark:bg-transparent"
   >
     <div class="grid grid-cols-3">
       <div>
         <router-link
           to="/about"
-          class="text-2xl font-bold text-gray-300 hover:text-indigo-600 transition transform ease-in-out duration-500"
+          class="transform text-2xl font-bold text-gray-300 transition duration-500 ease-in-out hover:text-indigo-600"
         >
           About
         </router-link>
@@ -14,7 +14,7 @@
       <div>
         <router-link
           to="/works"
-          class="text-2xl font-bold text-gray-300 hover:text-indigo-600 transition transform ease-in-out duration-500"
+          class="transform text-2xl font-bold text-gray-300 transition duration-500 ease-in-out hover:text-indigo-600"
         >
           Works
         </router-link>

@@ -12,7 +12,10 @@ const importSvg = (name: string): string => {
   >
     <div v-for="(item, index) of links.items" :key="index" class="icon lg:p-8">
       <a :href="item.link" target="_blank">
-        <img :src="importSvg(item.name)" class="w-8 sepia-30 brightness-75 hue-rotate-180" />
+        <img
+          :src="importSvg(item.name)"
+          class="sepia-30 w-8 brightness-75 hue-rotate-180"
+        />
       </a>
     </div>
   </div>

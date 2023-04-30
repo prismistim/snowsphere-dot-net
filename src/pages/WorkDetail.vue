@@ -38,7 +38,7 @@ const target = computed(() => {
           <Carousel :autoplay="7000" :transition="800" :wrap-around="true">
             <Slide v-for="slide in 4" :key="slide">
               <div class="carousel__item">
-                <div class="rounded-md overflow-hidden">
+                <div class="overflow-hidden rounded-md">
                   <img src="/works_no_image.jpg" />
                 </div>
               </div>

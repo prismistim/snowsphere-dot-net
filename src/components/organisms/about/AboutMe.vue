@@ -6,7 +6,7 @@ import Profile from '/@/components/organisms/about/Profile.vue'
 
 <template>
   <div class="text-center">
-    <div class="md:w-[30vw] lg:w-[25vw] 2xl:w-[23vw] mb-4 md:mb-0 mx-auto">
+    <div class="mx-auto mb-4 md:mb-0 md:w-[30vw] lg:w-[25vw] 2xl:w-[23vw]">
       <rounded-image src="/me.jpg" />
     </div>
     <card class="block">
@@ -18,6 +18,6 @@ import Profile from '/@/components/organisms/about/Profile.vue'
     </card>
   </div>
   <div class="mb-12">
-    <div class="md:border-b md:mb-6 border-gray-100" />
+    <div class="border-gray-100 md:mb-6 md:border-b" />
   </div>
 </template>
