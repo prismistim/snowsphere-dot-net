@@ -9,7 +9,7 @@ import MyFooter from '/@/components/organisms/Footer.vue'
       <div class="myname flex h-[10vh] items-center py-10 md:h-[20vh]">
         <router-link
           to="/"
-          class="site-title text-5xl font-medium text-gray-700 dark:text-white md:text-6xl lg:text-7xl"
+          class="font-futura text-5xl font-medium text-gray-700 dark:text-white md:text-6xl lg:text-7xl"
         >
           snowsphere
         </router-link>
@@ -23,9 +23,3 @@ import MyFooter from '/@/components/organisms/Footer.vue'
     <my-footer />
   </div>
 </template>
-
-<style scoped>
-.site-title {
-  font-family: 'futura-pt', sans-serif;
-}
-</style>

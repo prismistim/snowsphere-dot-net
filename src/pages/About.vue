@@ -6,6 +6,7 @@ import CareerList from '/@/components/organisms/about/CareerList.vue'
 import SideBySide from '/@/components/templates/SideBySide.vue'
 import SkilList from '/@/components/organisms/about/SkilList.vue'
 import MyWeeklyMusicChartList from '/@/components/organisms/about/MyWeeklyMusicChartList.vue'
+import AboutMeNew from '/@/components/organisms/about/AboutMeNew.vue'
 </script>
 
 <template>
@@ -14,8 +15,8 @@ import MyWeeklyMusicChartList from '/@/components/organisms/about/MyWeeklyMusicC
       <section-title> About </section-title>
     </template>
     <template #content>
-      <about-me class="mb-10" />
-      <side-by-side>
+      <about-me-new></about-me-new>
+      <side-by-side class="mt-6">
         <template #left>
           <career-list />
         </template>

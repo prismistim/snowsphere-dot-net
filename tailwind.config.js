@@ -7,6 +7,11 @@ module.exports = {
       center: true,
     },
     extend: {},
+    fontFamily: {
+      'futura': ['futura-pt', 'sans-serif'],
+      'ubuntu': ['Ubuntu', 'sans-serif'],
+      'ubuntu-mono': ['Ubuntu Mono', 'monospace']
+    }
   },
   variants: {
     extend: {},
