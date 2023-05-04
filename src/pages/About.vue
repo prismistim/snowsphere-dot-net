@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Contents from '/@/components/templates/Contents.vue'
 import AboutMe from '/@/components/organisms/about/AboutMe.vue'
+import BasicInfoCard from '/@/components/about/BasicInfoCard.vue'
 import SectionTitle from '/@/components/atoms/SectionTitle.vue'
 import CareerList from '/@/components/organisms/about/CareerList.vue'
 import SideBySide from '/@/components/templates/SideBySide.vue'
@@ -15,7 +16,7 @@ import AboutMeNew from '/@/components/organisms/about/AboutMeNew.vue'
       <section-title> About </section-title>
     </template>
     <template #content>
-      <about-me-new></about-me-new>
+      <basic-info-card></basic-info-card>
       <side-by-side class="mt-6">
         <template #left>
           <career-list />
