@@ -306,6 +306,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/material-icons-rounded@npm:^4.5.4":
+  version: 4.5.4
+  resolution: "@fontsource/material-icons-rounded@npm:4.5.4"
+  checksum: 8d1d84173d07da43de05a1bb6c4af657a419d15633c2b64438838e51d2b931d12291221be1cd31d2eb7f500355b17fdabae35c95087d517e34668713a7b1ae55
+  languageName: node
+  linkType: hard
+
 "@fontsource/ubuntu-mono@npm:^4.5.11":
   version: 4.5.11
   resolution: "@fontsource/ubuntu-mono@npm:4.5.11"
@@ -4115,6 +4122,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "snowsphere-dot-net@workspace:."
   dependencies:
+    "@fontsource/material-icons-rounded": ^4.5.4
     "@fontsource/ubuntu": ^4.5.11
     "@fontsource/ubuntu-mono": ^4.5.11
     "@types/node": ^18.16.3

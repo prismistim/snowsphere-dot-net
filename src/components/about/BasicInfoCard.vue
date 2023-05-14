@@ -1,59 +1,65 @@
 <script setup lang="ts">
-import indexJson from '/@/data/index.json'
+import meJson from '/@/data/me.json'
+import type { ListItem } from '/@/types/ListItem'
 
-type BasicInfoListItem = {
-  label: string
-  value: string
-}
-
-const basicInfo: BasicInfoListItem[] = [
+const basicInfo: ListItem[] = [
   {
     label: 'a.k.a',
-    value: indexJson.name.id,
+    value: meJson.name.id,
   },
   {
     label: 'Birth',
-    value: indexJson.birth,
+    value: meJson.birth,
   },
   {
     label: 'Place',
-    value: `${indexJson.place.prefecture}, ${indexJson.place.country}`,
+    value: `${meJson.place.prefecture}, ${meJson.place.country}`,
   },
 ]
 </script>
 
 <template>
   <div
-    class="border-collapse grid-cols-2 overflow-hidden rounded-lg border lg:grid"
+    class="border-collapse grid-cols-2 overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-700 lg:grid lg:divide-x lg:divide-neutral-300 lg:dark:divide-neutral-700"
   >
     <div
       class="h-80 bg-cover bg-center lg:h-auto"
       style="background-image: url('/me.jpg')"
     ></div>
-    <div>
-      <div class="">
-        <div class="border-neutral-300 px-6 py-4">
-          <div class="font-futura text-lg font-semibold text-neutral-400">
-            Name
-          </div>
-          <div class="mt-1">
-            <span class="text-3xl">{{ indexJson.name.kanji }}</span>
-          </div>
-          <div class="mt-1">
-            <span class="font-ubuntu-mono text-xl font-medium">
-              {{ indexJson.name.eng }}
-            </span>
-          </div>
+    <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
+      <div class="xs:border-t px-6 py-4">
+        <div
+          class="font-futura text-lg font-semibold text-neutral-400 dark:text-neutral-500"
+        >
+          Name
+        </div>
+        <div class="mt-1">
+          <span class="font-kinto text-3xl dark:text-neutral-300">
+            {{ meJson.name.kanji }}
+          </span>
+        </div>
+        <div class="mt-1">
+          <span
+            class="font-ubuntu-mono text-xl font-medium dark:text-neutral-400"
+          >
+            {{ meJson.name.eng }}
+          </span>
+        </div>
+      </div>
+      <div
+        v-for="item of basicInfo"
+        :key="item.label"
+        class="border-t border-neutral-300 px-6 py-4 dark:border-neutral-600"
+      >
+        <div
+          class="font-futura text-lg font-semibold text-neutral-400 dark:text-neutral-500"
+        >
+          {{ item.label }}
         </div>
         <div
-          v-for="item of basicInfo"
-          :key="item.label"
-          class="border-t border-neutral-300 px-6 py-4"
+          class="mt-1 font-ubuntu-mono text-xl text-neutral-700 dark:text-neutral-300"
         >
-          <div class="font-futura text-lg font-semibold text-neutral-400">
-            {{ item.label }}
-          </div>
-          <div class="mt-1 font-ubuntu-mono text-xl">{{ item.value }}</div>
+          {{ item.value }}
         </div>
       </div>
     </div>

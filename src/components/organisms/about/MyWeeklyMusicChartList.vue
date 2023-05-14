@@ -42,7 +42,7 @@ const MusicCharts = computed(() => {
   return target.slice(0, 5)
 })
 
-fetchMusicChart()
+// fetchMusicChart()
 </script>
 
 <template>

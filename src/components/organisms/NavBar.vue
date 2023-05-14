@@ -1,6 +1,6 @@
 <template>
   <div
-    class="nav-bar sticky top-0 z-10 bg-white bg-opacity-90 py-5 dark:bg-transparent"
+    class="nav-bar sticky top-0 z-10 bg-white bg-opacity-90 py-5 dark:bg-neutral-950/80"
   >
     <div class="grid grid-cols-3">
       <div>

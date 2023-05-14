@@ -1,0 +1,173 @@
+{
+  "name": {
+    "kanji": "村重 海月",
+    "eng": "Mizuki Murashige",
+    "id": "snowsphere"
+  },
+  "birth": "1998.08.08",
+  "place": {
+    "prefecture": "Gifu",
+    "country": "Japan"
+  },
+  "careers": [
+    {
+      "start": "2014.04",
+      "end": "2019.03",
+      "name": "岐阜工業高等専門学校 電気情報工学科",
+      "title": ""
+    },
+    {
+      "start": "2020.04",
+      "end": "2022.03",
+      "name": "サイバー大学 IT総合学部 IT総合学科",
+      "title": ""
+    },
+    {
+      "start": "2019.03",
+      "end": "",
+      "name": "一般社団法人 Do It Yourself",
+      "title": "エンジニア・デザイナー"
+    },
+    {
+      "start": "2019.03",
+      "end": "",
+      "name": "株式会社コマースロボティクス",
+      "title": "Webエンジニア"
+    }
+  ],
+  "skills": {
+    "languages": [
+      {
+        "name": "JavaScript",
+        "level": 2,
+        "isLove": true
+      },
+      {
+        "name": "TypeScript",
+        "level": 2,
+        "isLove": true
+      },
+      {
+        "name": "PHP",
+        "level": 2,
+        "isLove": false
+      },
+      {
+        "name": "Python",
+        "level": 1,
+        "isLove": false
+      },
+      {
+        "name": "C",
+        "level": 1,
+        "isLove": false
+      },
+      {
+        "name": "C#",
+        "level": 1,
+        "isLove": false
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "Vue.js (Nuxt)",
+        "level": 2,
+        "isLove": true
+      },
+      {
+        "name": "Tailwind CSS",
+        "level": 2,
+        "isLove": true
+      },
+      {
+        "name": "React (Next.js)",
+        "level": 1,
+        "isLove": true
+      },
+      {
+        "name": "Electron",
+        "level": 2,
+        "isLove": false
+      },
+      {
+        "name": "Laravel",
+        "level": 1,
+        "isLove": false
+      },
+      {
+        "name": "Deno",
+        "level": 1,
+        "isLove": false
+      },
+      {
+        "name": "tauri",
+        "level": 1,
+        "isLove": false
+      }
+    ],
+    "applications": [
+      {
+        "name": "VSCode",
+        "categories": ["dev"],
+        "level": 2
+      },
+      {
+        "name": "Adobe Illustrator",
+        "categories": ["design"],
+        "level": 2
+      },
+      {
+        "name": "Adobe Photoshop",
+        "categories": ["design"],
+        "level": 2
+      },
+      {
+        "name": "Adobe Premiere",
+        "categories": ["movie"],
+        "level": 2
+      },
+      {
+        "name": "KORG Gadget",
+        "categories": ["music"],
+        "level": 2
+      },
+      {
+        "name": "docker",
+        "categories": ["dev"],
+        "level": 2
+      },
+      {
+        "name": "Adobe After Effects",
+        "categories": ["movie"],
+        "level": 1
+      },
+      {
+        "name": "Adobe Audition",
+        "categories": ["music", "podcast"],
+        "level": 1
+      },
+      {
+        "name": "Unity",
+        "categories": ["dev", "game"],
+        "level": 1
+      }
+    ],
+    "services": {
+      "aws": [
+        "ECS",
+        "ECR",
+        "CloudFront",
+        "S3",
+        "Cognito",
+        "API Gateway",
+        "CodeCommit",
+        "CodePipeline",
+        "Route53",
+        "RDS",
+        "LoadBalancer"
+      ],
+      "others": ["Linode", "Contentful"]
+    },
+    "licenses": ["アマチュア無線 3級", "普通自動車運転免許"]
+  }
+}

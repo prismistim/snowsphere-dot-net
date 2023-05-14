@@ -6,6 +6,8 @@ import CareerList from '/@/components/organisms/about/CareerList.vue'
 import SideBySide from '/@/components/templates/SideBySide.vue'
 import SkilList from '/@/components/organisms/about/SkilList.vue'
 import MyWeeklyMusicChartList from '/@/components/organisms/about/MyWeeklyMusicChartList.vue'
+import BackgroundCard from '../components/about/BackgroundCard.vue'
+import SkillCard from '../components/about/SkillCard.vue'
 </script>
 
 <template>
@@ -17,15 +19,11 @@ import MyWeeklyMusicChartList from '/@/components/organisms/about/MyWeeklyMusicC
       <basic-info-card></basic-info-card>
       <side-by-side class="mt-6">
         <template #left>
-          <career-list />
+          <background-card />
+          <my-weekly-music-chart-list class="mt-6"></my-weekly-music-chart-list>
         </template>
         <template #right>
-          <skil-list />
-        </template>
-      </side-by-side>
-      <side-by-side>
-        <template #left>
-          <my-weekly-music-chart-list></my-weekly-music-chart-list>
+          <skill-card></skill-card>
         </template>
       </side-by-side>
     </template>
