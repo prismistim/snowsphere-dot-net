@@ -2,11 +2,8 @@
 import Contents from '/@/components/templates/Contents.vue'
 import BasicInfoCard from '/@/components/about/BasicInfoCard.vue'
 import SectionTitle from '/@/components/atoms/SectionTitle.vue'
-import CareerList from '/@/components/organisms/about/CareerList.vue'
 import SideBySide from '/@/components/templates/SideBySide.vue'
-import SkilList from '/@/components/organisms/about/SkilList.vue'
-import MyWeeklyMusicChartList from '/@/components/organisms/about/MyWeeklyMusicChartList.vue'
-import BackgroundCard from '../components/about/BackgroundCard.vue'
+import CareerCard from '../components/about/CareerCard.vue'
 import SkillCard from '../components/about/SkillCard.vue'
 </script>
 
@@ -19,8 +16,7 @@ import SkillCard from '../components/about/SkillCard.vue'
       <basic-info-card></basic-info-card>
       <side-by-side class="mt-6">
         <template #left>
-          <background-card />
-          <my-weekly-music-chart-list class="mt-6"></my-weekly-music-chart-list>
+          <career-card />
         </template>
         <template #right>
           <skill-card></skill-card>
