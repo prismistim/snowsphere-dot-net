@@ -1,9 +1,13 @@
 declare module '*.vue' {
-  import { DefineComponent } from 'vue'
-  const component: DefineComponent<
-    Record<string, unknown>,
-    Record<string, unknown>,
-    unknown
-  >
-  export default component
+  import type { ComponentOptions } from 'vue'
+
+  const Component: ComponentOptions
+  export default Component
+}
+
+declare module '*.md' {
+  import type { ComponentOptions } from 'vue'
+
+  const Component: ComponentOptions
+  export default Component
 }
