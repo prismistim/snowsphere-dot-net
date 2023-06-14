@@ -19,23 +19,23 @@ onMounted(async () => {
 <style lang="postcss">
 .md-contents {
   * {
-    @apply font-kinto;
+    @apply font-ubuntu-mono;
   }
 
   h1 {
-    @apply my-4 text-3xl font-semibold dark:text-neutral-400;
+    @apply mb-4 py-4 text-3xl font-semibold border-b dark:text-neutral-400;
   }
 
   h2 {
-    @apply my-4 text-2xl font-semibold dark:text-neutral-300;
+    @apply mb-2 py-2 text-2xl font-semibold border-b dark:text-neutral-300;
   }
 
   h3 {
-    @apply my-3 text-xl dark:text-neutral-300;
+    @apply mb-2 text-xl font-semibold dark:text-neutral-300;
   }
 
   p {
-    @apply my-3 dark:text-neutral-300;
+    @apply py-2 mb-2 dark:text-neutral-300;
   }
 
 
