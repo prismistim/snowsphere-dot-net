@@ -3,10 +3,9 @@ import { defineAsyncComponent, onMounted, ref } from 'vue'
 import type { ComponentOptions } from 'vue'
 
 const renderContent = ref<ComponentOptions>()
-const count = ref(0)
 
 onMounted(async () => {
-  renderContent.value = defineAsyncComponent(() => import('../articles/test.md'))
+  renderContent.value = defineAsyncComponent(() => import('../articles/20230510_lastfm_lambda.md'))
 })
 </script>
 
@@ -19,11 +18,11 @@ onMounted(async () => {
 <style lang="postcss">
 .md-contents {
   * {
-    @apply font-ubuntu-mono;
+    @apply font-ubuntu-mono dark:text-neutral-300;
   }
 
   h1 {
-    @apply mb-4 py-4 text-3xl font-semibold border-b dark:text-neutral-400;
+    @apply mb-4 py-4 text-3xl font-semibold border-b dark:text-neutral-300;
   }
 
   h2 {
@@ -37,8 +36,9 @@ onMounted(async () => {
   p {
     @apply py-2 mb-2 dark:text-neutral-300;
   }
-
-
   
+  img {
+    @apply mb-2;
+  }
 }
 </style>
