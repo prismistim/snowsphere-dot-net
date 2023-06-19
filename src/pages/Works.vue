@@ -7,7 +7,7 @@ import SectionTitle from '/@/components/atoms/SectionTitle.vue'
 <template>
   <contents>
     <template #title>
-      <section-title> Works </section-title>
+      <section-title> works </section-title>
     </template>
     <template #content>
       <grid-works />

@@ -10,19 +10,22 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="md-contents">
+  <div class="md-contents max-w-3xl mx-auto">
     <component :is="renderContent"></component>
+    <div class="my-8 text-center">
+      <button @click="$router.push('/works')">← back to list</button>
+    </div>
   </div>
 </template>
 
 <style lang="postcss">
 .md-contents {
   * {
-    @apply font-ubuntu-mono dark:text-neutral-300;
+    @apply dark:text-neutral-300;
   }
 
   h1 {
-    @apply mb-4 py-6 text-2xl font-semibold border-b border-dashed border-neutral-500 dark:text-neutral-300;
+    @apply mb-4 py-4 text-2xl font-heebo border-neutral-500 dark:text-neutral-300;
   }
 
   h2 {
@@ -37,16 +40,16 @@ onMounted(async () => {
     @apply mt-4 dark:text-neutral-300;
   }
 
-  p + p {
-    @apply mt-2;
-  }
-
   ul {
     @apply list-disc ml-4 mb-3;
   }
 
   li > ul {
     @apply mb-0;
+  }
+
+  div#thumb {
+    @apply bg-neutral-700
   }
   
   img {

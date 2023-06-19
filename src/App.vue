@@ -4,12 +4,12 @@ import MyFooter from '/@/components/organisms/Footer.vue'
 </script>
 
 <template>
-  <div class="">
+  <div class="mt-2">
     <div class="container mx-auto w-full px-[10vw]">
       <div class="myname flex h-[10vh] items-center py-4 md:h-[10vh]">
         <router-link
           to="/"
-          class="font-futura text-3xl font-medium text-gray-700 dark:text-white md:text-4xl lg:text-5xl"
+          class="font-ubuntu text-3xl font-medium text-neutral-400 md:text-4xl lg:text-5xl"
         >
           snowsphere
         </router-link>

@@ -6,15 +6,15 @@ import Tag from '/@/components/ui/Tag.vue'
 
 const skillListItems: ListItem[] = [
   {
-    label: 'Languages',
+    label: 'languages',
     value: 'languages',
   },
   {
-    label: 'Frameworks',
+    label: 'frameworks',
     value: 'frameworks',
   },
   {
-    label: 'Applications',
+    label: 'applications',
     value: 'applications',
   },
 ]
@@ -25,14 +25,14 @@ const serviceListItems: ListItem[] = [
     value: 'aws',
   },
   {
-    label: 'Others',
+    label: 'others',
     value: 'others',
   },
 ]
 </script>
 
 <template>
-  <sub-title> Skills </sub-title>
+  <sub-title> skills </sub-title>
   <div
     class="mt-6 rounded-lg border border-neutral-300 dark:border-neutral-700"
   >
@@ -44,8 +44,8 @@ const serviceListItems: ListItem[] = [
         'border-neutral-300 px-6 pb-6 pt-4 dark:border-neutral-700',
       ]"
     >
-      <div class="font-futura text-lg font-semibold text-neutral-400">
-        {{ skill.label }}
+      <div class="font-heebo text-lg text-neutral-500">
+        {{ skill.label }}:
       </div>
       <div class="text-md mt-3 flex flex-wrap gap-2 text-neutral-700">
         <Tag
@@ -75,16 +75,16 @@ const serviceListItems: ListItem[] = [
     <div
       :class="['border-t border-neutral-300 px-6 py-4 dark:border-neutral-700']"
     >
-      <div class="font-futura text-lg font-semibold text-neutral-400">
-        Services
+      <div class="font-heebo text-lg text-neutral-500">
+        services:
       </div>
       <div
         v-for="serviceListItem in serviceListItems"
         :key="serviceListItem.label"
         class="mt-3"
       >
-        <div class="text-md font-futura font-semibold text-neutral-400">
-          {{ serviceListItem.label }}
+        <div class="text-md font-heebo text-neutral-500">
+          {{ serviceListItem.label }}:
         </div>
         <div
           class="text-md mt-3 flex flex-wrap gap-2 text-neutral-700"

@@ -313,6 +313,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource-variable/fira-code@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "@fontsource-variable/fira-code@npm:5.0.3"
+  checksum: eb6273ed34af5e7a8c52a1c661c322d827801abceb165deea3f5930ceea2896678ff8f90c74607d0736182d21fe8868c9ee4884fd9106a59b8a2415489aac5b6
+  languageName: node
+  linkType: hard
+
+"@fontsource/heebo@npm:^5.0.3":
+  version: 5.0.3
+  resolution: "@fontsource/heebo@npm:5.0.3"
+  checksum: ef494286d1e8a5a726261fa782fd01ca08b7c48dacc1ccb8dba6c163a2b0415b98ca3776f6a3573e26370ada9e9d86cb639773dba9e2b9f6107f7a9f9b432dc8
+  languageName: node
+  linkType: hard
+
 "@fontsource/material-icons-rounded@npm:^4.5.4":
   version: 4.5.4
   resolution: "@fontsource/material-icons-rounded@npm:4.5.4"
@@ -4334,6 +4348,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "snowsphere-dot-net@workspace:."
   dependencies:
+    "@fontsource-variable/fira-code": ^5.0.3
+    "@fontsource/heebo": ^5.0.3
     "@fontsource/material-icons-rounded": ^4.5.4
     "@fontsource/ubuntu": ^4.5.11
     "@fontsource/ubuntu-mono": ^4.5.11

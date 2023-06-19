@@ -10,7 +10,7 @@ import SkillCard from '../components/about/SkillCard.vue'
 <template>
   <contents>
     <template #title>
-      <section-title> About </section-title>
+      <section-title> about </section-title>
     </template>
     <template #content>
       <basic-info-card></basic-info-card>

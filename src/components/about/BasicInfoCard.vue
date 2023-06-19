@@ -8,11 +8,11 @@ const basicInfo: ListItem[] = [
     value: meJson.name.id,
   },
   {
-    label: 'Birth',
+    label: 'birth',
     value: meJson.birth,
   },
   {
-    label: 'Place',
+    label: 'place',
     value: `${meJson.place.prefecture}, ${meJson.place.country}`,
   },
 ]
@@ -29,18 +29,18 @@ const basicInfo: ListItem[] = [
     <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
       <div class="xs:border-t px-6 py-4">
         <div
-          class="font-futura text-lg font-semibold text-neutral-400 dark:text-neutral-500"
+          class="font-heebo text-lg font-medium text-neutral-400 dark:text-neutral-500"
         >
-          Name
+          name:
         </div>
         <div class="mt-1">
-          <span class="font-kinto text-3xl dark:text-neutral-300">
+          <span class="font-kinto text-2xl dark:text-neutral-300">
             {{ meJson.name.kanji }}
           </span>
         </div>
         <div class="mt-1">
           <span
-            class="font-ubuntu-mono text-xl font-medium dark:text-neutral-400"
+            class="font-firacode text-md dark:text-neutral-400"
           >
             {{ meJson.name.eng }}
           </span>
@@ -52,12 +52,12 @@ const basicInfo: ListItem[] = [
         class="border-t border-neutral-300 px-6 py-4 dark:border-neutral-600"
       >
         <div
-          class="font-futura text-lg font-semibold text-neutral-400 dark:text-neutral-500"
+          class="font-heebo text-lg font-medium text-neutral-400 dark:text-neutral-500"
         >
-          {{ item.label }}
+          {{ item.label }}:
         </div>
         <div
-          class="mt-1 font-ubuntu-mono text-xl text-neutral-700 dark:text-neutral-300"
+          class="mt-1 font-firacode text-lg text-neutral-700 dark:text-neutral-300"
         >
           {{ item.value }}
         </div>

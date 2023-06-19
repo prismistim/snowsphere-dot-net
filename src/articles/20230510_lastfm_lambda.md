@@ -1,7 +1,17 @@
+---
+---
+
 # lastfm-my-weekly-chart-lambda
+
+<div id="thumb" class="flex justify-center">
+  <img src="./lastfm_lambda.png">
+</div>
 
 ## 概要
 Last.fm にて記録している音楽視聴の履歴から1週間でよく聞いた曲を、MisskeyというSNSに投稿できる関数を作りました。
+
+## 公開先
+[GitHub](https://github.com/prismistim/lastfm-my-weekly-chart-lambda)
 
 ## 技術スタック
 - Serverless Framework
@@ -15,7 +25,7 @@ Last.fm にて記録している音楽視聴の履歴から1週間でよく聞�
 - misskey-js
 
 ## 背景
-元々、`my-weekly-chart` というサービスがあり、Twitterと連携することで毎週同じように投稿ができていたのですが、長くメンテナンスされていないことや、APIの有料化もあり、気づけば動かなくなっていました。
+元々、`my-weekly-chart` というサービスを利用していて、Twitterと連携することで毎週同じように投稿ができていたのですが、長くメンテナンスされていないことや、APIの有料化もあり、気づけば動かなくなっていました。
 
 基本的にLast.fmのAPIから取得して、それを投稿するというシンプルなものなので、自分で作ってみるかと思い、開発をはじめました。
 
@@ -29,5 +39,4 @@ Lambda と EventBridge しか使わなかったので、最小構成ではある
 
 
 ## 今後
-
 現状、CIを作ったりしているわけではないので、ローカルでビルドしてそのままデプロイしていますが、そのうちGitHub Actionsなどでデプロイまで一括してできるようにしたいです。

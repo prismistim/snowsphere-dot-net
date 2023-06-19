@@ -11,7 +11,10 @@ module.exports = {
       'ubuntu': ['Ubuntu', 'sans-serif'],
       'ubuntu-mono': ['Ubuntu Mono', 'monospace'],
       'kinto': ['kinto-sans', 'sans-serif'],
-      'material': ['Material Icons Rounded']
+      'material': ['Material Icons Rounded'],
+      'firacode': ['Fira Code Variable', 'sans-serif'],
+      'heebo': ['Heebo', 'sans-serif'],
+      'main': ['Heebo', 'kinto-sans', 'sans-serif']
     }
   },
   variants: {

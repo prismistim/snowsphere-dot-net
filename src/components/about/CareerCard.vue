@@ -4,7 +4,7 @@ import SubTitle from '/@/components/atoms/SubTitle.vue'
 </script>
 
 <template>
-  <sub-title> Background </sub-title>
+  <sub-title> background </sub-title>
   <div
     class="mt-6 rounded-lg border border-neutral-300 dark:border-neutral-700"
   >
@@ -16,11 +16,11 @@ import SubTitle from '/@/components/atoms/SubTitle.vue'
         'border-neutral-300 px-6 py-4 dark:border-neutral-700',
       ]"
     >
-      <div class="font-futura text-lg font-semibold text-neutral-400">
+      <div class="font-heebo text-lg text-neutral-500">
         {{ item.start }} - {{ item.end !== '' ? item.end : 'now' }}
       </div>
       <div
-        class="text-md mt-1 font-kinto font-ubuntu-mono text-neutral-700 dark:text-neutral-300"
+        class="text-md mt-1 font-firacode text-neutral-700 dark:text-neutral-300"
       >
         {{ item.name }} {{ item.title !== '' ? `(${item.title})` : '' }}
       </div>
