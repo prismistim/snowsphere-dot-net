@@ -23,7 +23,7 @@ dataWorks.items.forEach((item) => {
     <work-item
       v-for="item of works"
       :key="item.title"
-      image="/me.jpg"
+      image="/@/articles/lastfm_lambda.png"
       :title="item.title"
       :tags="item.tags"
     />

@@ -19,7 +19,7 @@ const props = withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <div>
+  <router-link :to="'/works/' + id" class="group/item">
     <rounded-banner-image :src="props.image" class="mb-2" />
     <div>
       <span v-for="(item, index) of tags" :key="item.name" class="mr-2">
@@ -27,11 +27,12 @@ const props = withDefaults(defineProps<Props>(), {
         <span v-if="index < tags.length - 1" class="text-indigo-300">,</span>
       </span>
     </div>
-    <router-link
-      :to="'/works/' + id"
-      class="pb-1/2 text-lg md:text-xl text-gray-600 hover:text-indigo-500 font-medium hover:border-b-2 hover:border-indigo-500"
-    >
-      {{ title }}
-    </router-link>
-  </div>
+    <div class="pb-1/2 mt-4">
+      <span
+        class="text-lg font-medium text-neutral-400 transition duration-200 group-hover/item:text-white md:text-xl"
+      >
+        {{ title }}
+      </span>
+    </div>
+  </router-link>
 </template>

@@ -15,7 +15,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="h-40 overflow-hidden rounded-md">
+  <div class="h-60 overflow-hidden rounded-md bg-neutral-600 ">
     <img :src="props.src" :alt="props.alt" />
   </div>
 </template>

@@ -1,22 +1,26 @@
+<script setup lang="ts">
+type NavItem = {
+  to: string
+  label: string
+}
+
+const navItems: NavItem[] = [
+  { to: '/about', label: 'about' },
+  { to: '/works', label: 'works' },
+]
+</script>
+
 <template>
   <div
-    class="font-heebo text-2xl font-semibold tracking-wide sticky top-0 z-10 bg-white bg-opacity-90 py-5 dark:bg-neutral-950/80"
+    class="sticky top-0 z-10 bg-white bg-opacity-90 py-5 font-heebo text-2xl font-semibold tracking-wide dark:bg-neutral-900/80"
   >
-    <div class="grid grid-cols-3">
-      <div>
+    <div class="flex space-x-10">
+      <div v-for="item in navItems" :key="item.label" class="">
         <router-link
-          to="/about"
-          class="transform text-gray-300 transition duration-500 ease-in-out hover:text-indigo-600"
+          :to="item.to"
+          class="rounded-md duration-250 text-neutral-500 transition hover:text-neutral-300"
         >
-          about
-        </router-link>
-      </div>
-      <div>
-        <router-link
-          to="/works"
-          class="transform text-gray-300 transition duration-500 ease-in-out hover:text-indigo-600"
-        >
-          works
+          {{ item.label }}
         </router-link>
       </div>
     </div>

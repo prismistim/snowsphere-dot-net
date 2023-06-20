@@ -49,7 +49,7 @@ onMounted(async () => {
   }
 
   div#thumb {
-    @apply bg-neutral-700
+    @apply bg-neutral-700 rounded-md;
   }
   
   img {
