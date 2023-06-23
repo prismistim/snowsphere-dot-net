@@ -7,7 +7,7 @@ import SectionTitle from '/@/components/ui/SectionTitle.vue'
 <template>
   <contents>
     <template #title>
-      <section-title> works </section-title>
+      <section-title> works (WIP) </section-title>
     </template>
     <template #content>
       <grid-works />
