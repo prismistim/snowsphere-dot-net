@@ -20,5 +20,8 @@
   "rules": {
     "indent": ["error", 2],
     "vue/script-setup-uses-vars": "error"
-  }
+  },
+  "ignorePatterns": [
+    "**.md"
+  ]
 }

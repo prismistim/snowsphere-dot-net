@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WorkItem from '/@/components/molecules/works/WorkItem.vue'
+import WorkItem from '/@/components/works/WorkItem.vue'
 import dataWorks from '/@/data/works.json'
 
 type Tag = {
@@ -19,11 +19,11 @@ dataWorks.items.forEach((item) => {
 </script>
 
 <template>
-  <div class="mb-10 grid gap-8 lg:grid-cols-2 xl:grid-cols-3">
+  <div class="grid gap-8 lg:grid-cols-2">
     <work-item
       v-for="item of works"
       :key="item.title"
-      image="/me.jpg"
+      image="/@/articles/lastfm_lambda.png"
       :title="item.title"
       :tags="item.tags"
     />

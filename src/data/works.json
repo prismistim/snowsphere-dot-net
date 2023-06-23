@@ -2,27 +2,8 @@
   "items": [
     {
       "id": 1,
-      "title": "ゲーム限界都市™ デザイン",
-      "tags": [
-        {
-          "name": "デザイン"
-        },
-        {
-          "name": "DTP"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "ゲーム限界都市™ デザイン",
-      "tags": [
-        {
-          "name": "デザイン"
-        },
-        {
-          "name": "DTP"
-        }
-      ]
+      "title": "lastfm-my-weekly-chart-lambda",
+      "tags": []
     }
   ]
 }

@@ -1,31 +1,25 @@
 <script setup lang="ts">
-import Contents from '/@/components/templates/Contents.vue'
-import AboutMe from '/@/components/organisms/about/AboutMe.vue'
-import SectionTitle from '/@/components/atoms/SectionTitle.vue'
-import CareerList from '/@/components/organisms/about/CareerList.vue'
-import SideBySide from '/@/components/templates/SideBySide.vue'
-import SkilList from '/@/components/organisms/about/SkilList.vue'
-import MyWeeklyMusicChartList from '/@/components/organisms/about/MyWeeklyMusicChartList.vue'
+import Contents from '/@/layouts/Contents.vue'
+import BasicInfoCard from '/@/components/about/BasicInfoCard.vue'
+import SectionTitle from '/@/components/ui/SectionTitle.vue'
+import SideBySide from '/@/layouts/SideBySide.vue'
+import CareerCard from '/@/components/about/CareerCard.vue'
+import SkillCard from '/@/components/about/SkillCard.vue'
 </script>
 
 <template>
   <contents>
     <template #title>
-      <section-title> About </section-title>
+      <section-title> about </section-title>
     </template>
     <template #content>
-      <about-me class="mb-10" />
-      <side-by-side>
+      <basic-info-card></basic-info-card>
+      <side-by-side class="mt-6">
         <template #left>
-          <career-list />
+          <career-card />
         </template>
         <template #right>
-          <skil-list />
-        </template>
-      </side-by-side>
-      <side-by-side>
-        <template #left>
-          <my-weekly-music-chart-list></my-weekly-music-chart-list>
+          <skill-card></skill-card>
         </template>
       </side-by-side>
     </template>
