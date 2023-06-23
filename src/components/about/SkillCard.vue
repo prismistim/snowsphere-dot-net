@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import meJson from '/@/data/me.json'
 import type { ListItem } from '/@/types/ListItem'
-import SubTitle from '/@/components/atoms/SubTitle.vue'
+import SubTitle from '/@/components/ui/SubTitle.vue'
 import Tag from '/@/components/ui/Tag.vue'
 
 const skillListItems: ListItem[] = [
@@ -44,9 +44,7 @@ const serviceListItems: ListItem[] = [
         'border-neutral-300 px-6 pb-6 pt-4 dark:border-neutral-700',
       ]"
     >
-      <div class="font-heebo text-lg text-neutral-500">
-        {{ skill.label }}:
-      </div>
+      <div class="font-heebo text-lg text-neutral-500">{{ skill.label }}:</div>
       <div class="text-md mt-3 flex flex-wrap gap-2 text-neutral-700">
         <Tag
           v-for="item in meJson.skills[skill.value]"
@@ -75,9 +73,7 @@ const serviceListItems: ListItem[] = [
     <div
       :class="['border-t border-neutral-300 px-6 py-4 dark:border-neutral-700']"
     >
-      <div class="font-heebo text-lg text-neutral-500">
-        services:
-      </div>
+      <div class="font-heebo text-lg text-neutral-500">services:</div>
       <div
         v-for="serviceListItem in serviceListItems"
         :key="serviceListItem.label"
@@ -86,9 +82,7 @@ const serviceListItems: ListItem[] = [
         <div class="text-md font-heebo text-neutral-500">
           {{ serviceListItem.label }}:
         </div>
-        <div
-          class="text-md mt-3 flex flex-wrap gap-2 text-neutral-700"
-        >
+        <div class="text-md mt-3 flex flex-wrap gap-2 text-neutral-700">
           <Tag
             v-for="item in meJson.skills.services[serviceListItem.value]"
             :key="item"

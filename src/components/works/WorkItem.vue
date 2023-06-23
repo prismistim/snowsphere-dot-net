@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { TagType } from '/@/types/workItemType'
-import RoundedBannerImage from '/@/components/atoms/RoundedBannerImage.vue'
-import Tag from '/@/components/atoms/Tag.vue'
+import RoundedBannerImage from '/@/components/ui/RoundedBannerImage.vue'
 
 type Props = {
   id: number
@@ -21,12 +20,6 @@ const props = withDefaults(defineProps<Props>(), {
 <template>
   <router-link :to="'/works/' + id" class="group/item">
     <rounded-banner-image :src="props.image" class="mb-2" />
-    <div>
-      <span v-for="(item, index) of tags" :key="item.name" class="mr-2">
-        <tag :name="item.name" class="text-sm" />
-        <span v-if="index < tags.length - 1" class="text-indigo-300">,</span>
-      </span>
-    </div>
     <div class="pb-1/2 mt-4">
       <span
         class="text-lg font-medium text-neutral-400 transition duration-200 group-hover/item:text-white md:text-xl"

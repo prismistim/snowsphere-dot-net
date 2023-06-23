@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Contents from '/@/components/templates/Contents.vue'
-import GridWorks from '/@/components/organisms/works/GridWorks.vue'
-import SectionTitle from '/@/components/atoms/SectionTitle.vue'
+import Contents from '/@/layouts/Contents.vue'
+import GridWorks from '/@/components/works/GridWorks.vue'
+import SectionTitle from '/@/components/ui/SectionTitle.vue'
 </script>
 
 <template>

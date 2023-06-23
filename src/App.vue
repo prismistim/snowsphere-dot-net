@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import NavBar from '/@/components/organisms/NavBar.vue'
-import MyFooter from '/@/components/organisms/Footer.vue'
+import NavBar from '/@/components/common/NavBar.vue'
+import MyFooter from '/@/components/common/Footer.vue'
 </script>
 
 <template>
@@ -15,7 +15,9 @@ import MyFooter from '/@/components/organisms/Footer.vue'
         </router-link>
       </div>
       <nav-bar />
-      <div class="mt-2 mb-7 border-b border-neutral-100 dark:border-neutral-700" />
+      <div
+        class="mb-7 mt-2 border-b border-neutral-100 dark:border-neutral-700"
+      />
       <div>
         <router-view />
       </div>

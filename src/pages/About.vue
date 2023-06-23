@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Contents from '/@/components/templates/Contents.vue'
+import Contents from '/@/layouts/Contents.vue'
 import BasicInfoCard from '/@/components/about/BasicInfoCard.vue'
-import SectionTitle from '/@/components/atoms/SectionTitle.vue'
-import SideBySide from '/@/components/templates/SideBySide.vue'
-import CareerCard from '../components/about/CareerCard.vue'
-import SkillCard from '../components/about/SkillCard.vue'
+import SectionTitle from '/@/components/ui/SectionTitle.vue'
+import SideBySide from '/@/layouts/SideBySide.vue'
+import CareerCard from '/@/components/about/CareerCard.vue'
+import SkillCard from '/@/components/about/SkillCard.vue'
 </script>
 
 <template>

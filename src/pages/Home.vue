@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import RoundedImage from '/@/components/atoms/RoundedImage.vue'
+import RoundedImage from '/@/components/ui/RoundedImage.vue'
 </script>
 
 <template>

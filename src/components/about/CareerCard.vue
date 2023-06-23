@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import meJson from '/@/data/me.json'
-import SubTitle from '/@/components/atoms/SubTitle.vue'
+import SubTitle from '/@/components/ui/SubTitle.vue'
 </script>
 
 <template>

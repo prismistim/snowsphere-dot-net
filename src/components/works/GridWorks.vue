@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WorkItem from '/@/components/molecules/works/WorkItem.vue'
+import WorkItem from '/@/components/works/WorkItem.vue'
 import dataWorks from '/@/data/works.json'
 
 type Tag = {
