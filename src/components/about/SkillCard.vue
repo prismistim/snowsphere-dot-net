@@ -3,6 +3,7 @@ import meJson from '/@/data/me.json'
 import type { ListItem } from '/@/types/ListItem'
 import SubTitle from '/@/components/ui/SubTitle.vue'
 import Tag from '/@/components/ui/Tag.vue'
+import LoveIcon from '/@/components/ui/LoveIcon.vue'
 
 const skillListItems: ListItem[] = [
   {
@@ -59,12 +60,7 @@ const serviceListItems: ListItem[] = [
               v-if="item.isLove"
               class="ml-1 mt-0.5 inline-flex content-center"
             >
-              <span
-                class="material-icons-rounded bg-gradient-to-r from-rose-500 to-fuchsia-500 bg-clip-text text-transparent"
-                style="font-size: 0.75rem"
-              >
-                favorite
-              </span>
+              <LoveIcon></LoveIcon>
             </div>
           </template>
         </Tag>
