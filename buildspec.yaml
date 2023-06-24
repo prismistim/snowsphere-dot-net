@@ -4,6 +4,8 @@ phases:
   install:
     runtime-versions:
       nodejs: 18
+    commands:
+      - corepack enable
   pre_build:
     commands:
       - yarn
