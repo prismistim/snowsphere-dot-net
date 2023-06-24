@@ -6,7 +6,7 @@ phases:
       nodejs: 18
   pre_build:
     commands:
-      - yarn install
+      - yarn
   build:
     commands:
       - yarn build
