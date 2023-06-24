@@ -10,7 +10,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="md-contents max-w-3xl mx-auto">
+  <div v-if="renderContent" class="md-contents max-w-3xl mx-auto">
     <component :is="renderContent"></component>
     <div class="my-8 text-center">
       <button @click="$router.push('/works')">← back to list</button>
